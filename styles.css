@@ -1,0 +1,70 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2874f0;
+    padding: 10px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #2874f0;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: fixed; /* Fixed position to cover the entire screen */
+    top: 60px; /* Adjust this value to match the height of your title/nav bar */
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: calc(100vh - 60px); /* Full viewport height minus the title/nav bar height */
+    background-color: #f9f9f9;
+    z-index: 1000; /* Ensure it appears above other content */
+    overflow-y: auto; /* Add scroll if content overflows vertically */
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Columns inside the dropdown */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column h3 {
+    margin-bottom: 5px; /* Reduced margin below h3 titles */
+    font-size: 16px;
+    color: #2874f0;
+}
+
+.column a {
+    display: block;
+    color: black;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.column a:hover {
+    color: #2874f0;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
